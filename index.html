@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Generator</title>
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="#" onclick="opentag('home')">
+                <h1>Generator</h1>
+            </a>
+        </div>
+        <!-- <div class="burger">
+            <a href="#" id="burgerBtn"> <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </div> -->
+        <nav class="nav-desk" id="myTopNav">
+            <a href="#" onclick="opentag('home')">Home</a>
+            <a href="#" onclick="opentag('wangy')">????</a>
+            <a href="#" onclick="opentag('dosen')">Dosen</a>
+            <a href="#" onclick="opentag('meme')">Meme</a>
+        </nav>
+        <nav class="nav-mobile">
+            <ul>
+                <a href="#" onclick="opentag('home')">Home</a>
+                <a href="#" onclick="opentag('wangy')">????</a>
+                <a href="#" onclick="opentag('dosen')">Dosen</a>
+                <a href="#" onclick="opentag('meme')">Meme</a>
+            </ul>
+        </nav>
+        <div class="nav-btn">
+            <button id="gelap"></button>
+            <div class="ball"></div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- home -->
+    <div id="home" class="container main">
+        <div class="home-kiri">
+            <h1><span>Text</span> Generator</h1>
+            <img src="./img/txtgenerator(buat project).svg" alt="">
+            <p>Buat teks sopan kepada dosen, dapatkan asupan meme
+                setiap saat, atau ingin membuat text rahasia?</p>
+            <a href="#">Start </a>
+        </div>
+
+        <div class="home-kanan">
+            <img src="./img/txtgenerator(buat project).svg" alt="">
+        </div>
+    </div>
+    <!-- end home -->
+
+    <!-- wangy -->
+    <div id="wangy" class="container wangy" style="display: none;">
+        <h2><span>Wangy</span> Generator</h2>
+        <div class="wangy-input">
+            <p>Input</p>
+            <input class="btn-gelap" type="text" id="myInput" placeholder="masukan nama">
+            <input class="btn-gelap" type="text" id="myInputWangy" placeholder="Apanya yang wangy"><br>
+            <button id="myButton">Tekan</button>
+        </div>
+        <div class="wangy-textarea">
+            <p>Output</p>
+            <textarea class="btn-gelap" id="area"
+                placeholder="nanti teksnya bakal nongol trs lu klik ae auto ke copas kok :)" onclick="copyText()"
+                readonly></textarea><br>
+            <button id="reload">Lagi?</button>
+        </div>
+    </div>
+    <!-- end wangy -->
+
+    <!-- dosen -->
+    <div id="dosen" class="container dosen" style="display: none;">
+        <h2> Chat <span>Dosen</span> Generator</h2>
+        <div class="isi">
+            <div class="dosen-kiri">
+                <div class="kiri-kotak">
+                    <p>Nama Anda dan NIM</p>
+                    <input class="btn-gelap" type="text" id="myInputNama" placeholder="masukan nama">
+                </div>
+                <div class="kiri-kotak">
+                    <p>Kelas</p>
+                    <input class="btn-gelap" type="text" id="myInputKelas" placeholder="masukan kelas">
+                </div>
+                <div class="kiri-kotak">
+                    <p>Waktu</p>
+                    <input class="btn-gelap" type="text" id="myInputWaktu" placeholder="pagi/siang/sore/malam">
+                </div>
+                <div class="kiri-kotak">
+                    <p>Keperluan</p>
+                    <textarea class="btn-gelap" id="myInputKeperluan" placeholder="masukan Keperluan" fixed></textarea>
+                </div>
+                <button id="myButtonDosen">Tekan</button>
+            </div>
+
+            <div class="kanan-kotak">
+                <p>Output</p>
+                <textarea class="btn-gelap" id="areaDosen"
+                    placeholder="nanti teksnya bakal nongol trs lu klik ae auto ke copas kok :)"
+                    onclick="copyTextDosen()" readonly></textarea><br><br>
+            </div>
+        </div>
+    </div>
+    <!-- end dosen -->
+
+    <!-- meme -->
+    <div id="meme" class="container meme" style="display: none;">
+        <h2><span>Meme</span> Generator</h2>
+        <div class="ye">
+            <div class="meme-today">
+                <h3>Meme hari ini</h3>
+                <img id="today" src="./img/meme/.jpg">
+            </div>
+            <div class="meme-acak">
+                <h3>Teken gambarnya bwaang </h3>
+                <button id="btnMeme" value="Display Random Image">
+                    <img id="acak" src="img/meme/.jpg" name="canvas">
+            </div>
+        </div>
+    </div>
+    <!-- end meme -->
+
+    <footer>
+        Made with <span>&hearts;</span> Reihan Setya Abida
+    </footer>
+
+    <script src=" ./script.js"> </script>
+</body>
+
+</html>

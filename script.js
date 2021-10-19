@@ -26,35 +26,7 @@ function opentag(namatag) {
   }
 }
 
-// // wangy
-// add.addEventListener('click', function(){
-//     let txt = input.value;
-//     let txtW = inputWangy.value;
-//     if (txt == ''){
-//         alert('diketik bang')
-//     }else if(txtW == ''){
-//         alert('wangy apa tuh bwang')
-//     }
-//     else{
-//         let txtAreaFull = txtArea.value;
-//         function txtIsi() {
-//             txtArea.append(`${txt}`);
-//         }
-//         if(txtAreaFull != ''){
-//             alert('klik ulangi, teks tidack bisa ditiban');
-//         }else{
-//             txtIsi();
-//         }
-//         input.value = '';
-//         inputWangy.value = '';
-//         // let txtBaru = document.createTextNode(txt);
 
-//         reload.addEventListener('click', function () {
-//             txtArea.innerText = ''
-//         })
-//         // add.style.display = 'none'
-//     }
-// })
 
 // fungsi yang kalo di select bakal ke copy
 function copyText() {
